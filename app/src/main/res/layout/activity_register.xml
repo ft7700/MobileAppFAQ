@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register"
+    android:orientation="vertical"
+    tools:context=".chargesActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register / Login"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_margin="5dp"
+        android:textColor="#000">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do the first time user need to register in order to use this application?"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:textColor="#000">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ans:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="70dp"
+        android:textColor="#000">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yes, first time user or new user have to register in order to use this education seeker app. Once they registered, they would need to log in in order to check the contents inside the app."
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:textColor="#000">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="130dp">
+        <ImageView
+            android:id="@+id/like5"
+            android:layout_width="90sp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="90sp"
+            android:background="@drawable/like"/>
+        <ImageView
+            android:id="@+id/dislike5"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:layout_marginLeft="170dp"
+            android:background="@drawable/dislike"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/charges"
+    tools:context=".chargesActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Charges"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_margin="5dp"
+        android:textColor="#000">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do this app cost any charges?"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:textColor="#000">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ans:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="70dp"
+        android:textColor="#000">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The app is totally free of charges. Its' intention is to let users which mainly are parents to use this app to help their children or kids to seek for their secondary school"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:textColor="#000">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="130dp">
+        <ImageView
+            android:id="@+id/like2"
+            android:layout_width="90sp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="90sp"
+            android:background="@drawable/like"/>
+        <ImageView
+            android:id="@+id/dislike2"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:layout_marginLeft="170dp"
+            android:background="@drawable/dislike"/>
+    </LinearLayout>
+
+</LinearLayout>
