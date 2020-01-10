@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="130dp">
+        android:layout_marginTop="100dp">
         <ImageView
             android:id="@+id/like5"
             android:layout_width="90sp"
@@ -65,6 +65,23 @@
             android:layout_height="90sp"
             android:layout_marginLeft="170dp"
             android:background="@drawable/dislike"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="70dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:id="@+id/likeNum5"
+            android:text="800"/>
+
+        <TextView
+            android:layout_marginLeft="240dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:id="@+id/dislikeNum5"
+            android:text="400"/>
     </LinearLayout>
 
 </LinearLayout>

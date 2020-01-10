@@ -17,18 +17,23 @@ class historyActivity : AppCompatActivity() {
         setContentView(R.layout.activity_history)
 
         like1.setOnClickListener(){
-            val snackbar = Snackbar.make(history,"The content is useful",Snackbar.LENGTH_INDEFINITE)
+            var a = likeNum1.text.toString().toInt()
+            a++.toString()
+            likeNum1.setText(a.toString())
+
+            val snackbar = Snackbar.make(history,"The content is useful",Snackbar.LENGTH_SHORT)
             snackbar.setAction("Close",View.OnClickListener {
-                snackbar.dismiss()
             })
 
             snackbar.show()
         }
 
         dislike1.setOnClickListener(){
-            val snackbar = Snackbar.make(history,"The content is not useful",Snackbar.LENGTH_INDEFINITE)
+            var b = dislikeNum1.text.toString().toInt()
+            b--.toString()
+            dislikeNum1.setText(b.toString())
+            val snackbar = Snackbar.make(history,"The content is not useful",Snackbar.LENGTH_SHORT)
             snackbar.setAction("Close",View.OnClickListener {
-                snackbar.dismiss()
             })
             snackbar.setActionTextColor(ContextCompat.getColor(this,R.color.colorPrimary))
             val view = snackbar.view
@@ -36,5 +41,6 @@ class historyActivity : AppCompatActivity() {
             text.setTextColor(ContextCompat.getColor(this,R.color.colorPrimary))
             snackbar.show()
         }
+
     }
 }

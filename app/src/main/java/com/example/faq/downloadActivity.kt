@@ -16,18 +16,23 @@ class downloadActivity : AppCompatActivity() {
         setContentView(R.layout.activity_download)
 
         like4.setOnClickListener(){
-            val snackbar = Snackbar.make(download,"The content is useful", Snackbar.LENGTH_INDEFINITE)
-            snackbar.setAction("Close", View.OnClickListener {
-                snackbar.dismiss()
+            var a = likeNum4.text.toString().toInt()
+            a++.toString()
+            likeNum4.setText(a.toString())
+
+            val snackbar = Snackbar.make(download,"The content is useful",Snackbar.LENGTH_SHORT)
+            snackbar.setAction("Close",View.OnClickListener {
             })
 
             snackbar.show()
         }
 
         dislike4.setOnClickListener(){
-            val snackbar = Snackbar.make(download,"The content is not useful", Snackbar.LENGTH_INDEFINITE)
-            snackbar.setAction("Close", View.OnClickListener {
-                snackbar.dismiss()
+            var b = dislikeNum4.text.toString().toInt()
+            b--.toString()
+            dislikeNum4.setText(b.toString())
+            val snackbar = Snackbar.make(download,"The content is not useful",Snackbar.LENGTH_SHORT)
+            snackbar.setAction("Close",View.OnClickListener {
             })
             snackbar.setActionTextColor(ContextCompat.getColor(this,R.color.colorPrimary))
             val view = snackbar.view

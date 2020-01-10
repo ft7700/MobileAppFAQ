@@ -16,18 +16,23 @@ class registerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         like5.setOnClickListener(){
-            val snackbar = Snackbar.make(register,"The content is useful", Snackbar.LENGTH_INDEFINITE)
-            snackbar.setAction("Close", View.OnClickListener {
-                snackbar.dismiss()
+            var a = likeNum5.text.toString().toInt()
+            a++.toString()
+            likeNum5.setText(a.toString())
+
+            val snackbar = Snackbar.make(register,"The content is useful",Snackbar.LENGTH_SHORT)
+            snackbar.setAction("Close",View.OnClickListener {
             })
 
             snackbar.show()
         }
 
         dislike5.setOnClickListener(){
-            val snackbar = Snackbar.make(register,"The content is not useful", Snackbar.LENGTH_INDEFINITE)
-            snackbar.setAction("Close", View.OnClickListener {
-                snackbar.dismiss()
+            var b = dislikeNum5.text.toString().toInt()
+            b--.toString()
+            dislikeNum5.setText(b.toString())
+            val snackbar = Snackbar.make(register,"The content is not useful",Snackbar.LENGTH_SHORT)
+            snackbar.setAction("Close",View.OnClickListener {
             })
             snackbar.setActionTextColor(ContextCompat.getColor(this,R.color.colorPrimary))
             val view = snackbar.view
